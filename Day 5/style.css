@@ -82,25 +82,68 @@ body .content-wrapper .product-categories .product-categories-names a {
 body .content-wrapper .product-categories .relax {
   background-image: url(Assets/backgrounds/relax.png);
   background-repeat: no-repeat;
+  width: 49%;
 }
 body .content-wrapper .product-categories .work {
   background-image: url(Assets/backgrounds/work.png);
   background-repeat: no-repeat;
+  width: 49%;
 }
 body .content-wrapper .product-categories .kitchen {
   background-image: url(Assets/backgrounds/kitchen.png);
   background-repeat: no-repeat;
+  width: 32%;
 }
 body .content-wrapper .product-categories .kids {
   background-image: url(Assets/backgrounds/child.png);
   background-repeat: no-repeat;
+  width: 32%;
 }
 body .content-wrapper .product-categories .bath {
   background-image: url(Assets/backgrounds/bath.png);
   background-repeat: no-repeat;
+  width: 32%;
 }
 body .content-wrapper .product-categories .categories-wrapper {
   display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body .content-wrapper .specials-wrapper .specials {
+  display: flex;
+  justify-content: space-between;
+}
+body .content-wrapper .specials-wrapper .specials-item {
+  width: 32%;
+}
+body .content-wrapper .specials-wrapper .specials-item p {
+  font-size: 14px;
+  color: #888888;
+}
+body .content-wrapper .specials-wrapper .specials-prices {
+  display: flex;
+}
+body .content-wrapper .specials-wrapper .specials-prices .old-price {
+  margin-left: 32px;
+  color: #888888;
+  text-decoration: line-through;
+}
+body .content-wrapper .catalog-wrapper {
+  margin-top: 20px;
+}
+body .content-wrapper .catalog-wrapper .catalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+body .content-wrapper .catalog-wrapper .catalog a {
+  font-size: 16px;
+  color: black;
+  text-decoration: underline;
+}
+body .content-wrapper .catalog-wrapper .catalog-item {
+  width: 31.5%;
 }
 body h1 {
   font-size: 64px;

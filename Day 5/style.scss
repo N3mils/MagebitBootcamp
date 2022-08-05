@@ -81,26 +81,77 @@ body{
             .relax{
                 background-image: url(Assets/backgrounds/relax.png);
                 background-repeat: no-repeat;
+                width: 49%;
             }
             .work{
                 background-image: url(Assets/backgrounds/work.png);
                 background-repeat: no-repeat;
+                width: 49%;
             }
             .kitchen{
                 background-image: url(Assets/backgrounds/kitchen.png);
                 background-repeat: no-repeat;
+                width: 32%;
             }
             .kids{
                 background-image: url(Assets/backgrounds/child.png);
                 background-repeat: no-repeat;
+                width: 32%;
             }
             .bath{
                 background-image: url(Assets/backgrounds/bath.png);
                 background-repeat: no-repeat;
+                width: 32%;
             }
             .categories-wrapper{
                 display: flex;
-                
+                justify-content: space-between;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        .specials-wrapper{
+
+            .specials{
+                display: flex;
+                justify-content: space-between;
+            }
+            .specials-item{
+                width: 32%;
+            }
+
+            .specials-item p{
+                font-size: 14px;
+                color: #888888;
+            }
+            
+            .specials-prices{
+                display: flex;
+
+                .old-price{
+                    margin-left: 32px;
+                    color: #888888;
+                    text-decoration: line-through;
+                }
+            }
+            
+        }
+        .catalog-wrapper{
+            margin-top: 20px;
+
+            .catalog{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+
+                a{
+                    font-size: 16px;
+                    color:black;
+                    text-decoration: underline;
+                }
+            }
+            .catalog-item{
+                width: 31.5%;
             }
         }
     }
