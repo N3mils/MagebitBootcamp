@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    background-image: url(Assets/backgrounds/start-background.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+
+    nav{
+        margin: auto;
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.5px solid white;
+
+        a{
+            list-style: none;
+            text-decoration: none;
+            color: white;
+            font-family: 'Montserrat';
+            font-size: 16px;
+        }
+
+        form input{
+            width: 288px;
+            height: 41px;
+            border-radius: 20px;
+            border: 1px solid white;
+            background: none;
+        }
+
+        input::placeholder{
+            color: white;
+            padding-left: 20px;
+        }
+
+        .page-name{
+            font-size: 36px;
+        }
+
+        .right-navigation{
+            display: flex;
+            align-items: center;
+        }
+        .right-navigation a:last-child{
+            margin-left: 32px;
+        }
+    }
+    .content-wrapper{
+        margin: auto;
+        width: 1200px;
+        font-family: 'Montserrat';
+        
+
+        .start-content{
+            width: 792px;
+            height: 81vh;
+            color: white;
+        }
+
+        .product-categories{
+            margin-top: 20px;
+
+            .product-categories-names{
+                height: 415px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .product-categories-names a{
+                color: white;
+            }
+
+            .relax{
+                background-image: url(Assets/backgrounds/relax.png);
+                background-repeat: no-repeat;
+            }
+            .work{
+                background-image: url(Assets/backgrounds/work.png);
+                background-repeat: no-repeat;
+            }
+            .kitchen{
+                background-image: url(Assets/backgrounds/kitchen.png);
+                background-repeat: no-repeat;
+            }
+            .kids{
+                background-image: url(Assets/backgrounds/child.png);
+                background-repeat: no-repeat;
+            }
+            .bath{
+                background-image: url(Assets/backgrounds/bath.png);
+                background-repeat: no-repeat;
+            }
+            .categories-wrapper{
+                display: flex;
+                
+            }
+        }
+    }
+
+    
+
+
+
+
+h1{
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 600;
+}
+h2{
+    font-size: 48px;
+}
+h3{
+    font-size: 34px;
+}
+h4{
+    font-size: 24px;
+    line-height: 32px;
+}
+h5{
+    font-size: 16px;
+}
+}
