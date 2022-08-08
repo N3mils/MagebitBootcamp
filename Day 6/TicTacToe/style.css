@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+body .game-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .game-wrapper .game {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+  width: 330px;
+}
+body .game-wrapper .game .grid-item {
+  background-color: black;
+  height: 100px;
+  width: 100px;
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
