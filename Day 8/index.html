@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8 | To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Tasks for today</h1>
+
+        <div class="taskCreation">
+            <input type="text" placeholder="Input text" id="newTask" autocomplete="off"/>
+            <input type="hidden" id="saveIndex"/>
+            <button id="addTask">Add task</button>
+            <button id="saveToDo" style="display: none;">Save task</button>
+        </div>
+
+        <div class="toDoList">
+            <div class="tasks" id="taskBox">
+                <!-- <div class="newTask">Test task</div>
+                <button id="modifyTask" >Modify</button>
+                <button id="deleteTask" >Delete</button> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

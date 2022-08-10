@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+
+    .wrapper{
+
+        h1{
+            text-align: center;
+        }
+        .taskCreation{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px;
+        }
+        .toDoList{
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+}
