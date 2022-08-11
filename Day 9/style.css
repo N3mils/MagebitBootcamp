@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+}
+body .wrapper-navigation {
+  height: 60px;
+}
+body .wrapper-navigation nav {
+  display: flex;
+  justify-content: space-between;
+}
+body .wrapper-navigation nav .left-navigation {
+  display: inline-flex;
+}
+body .wrapper-navigation nav .left-navigation a {
+  height: 25px;
+  width: 25px;
+  text-decoration: none;
+}
+body .wrapper-navigation nav .left-navigation input {
+  max-width: 280px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  background: url(Parts/search.svg);
+  background-repeat: no-repeat;
+  background-position: 6% 50%;
+  margin-left: 20px;
+}
+body .wrapper-navigation nav .left-navigation input::-moz-placeholder {
+  padding-left: 15%;
+}
+body .wrapper-navigation nav .left-navigation input:-ms-input-placeholder {
+  padding-left: 15%;
+}
+body .wrapper-navigation nav .left-navigation input::placeholder {
+  padding-left: 15%;
+}
+body .wrapper-navigation nav .left-navigation .search {
+  background-color: #F1F2F5;
+}
+body .wrapper-navigation nav .mid-icons {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .wrapper-navigation nav .mid-icons .videos::after {
+  height: 20px;
+  width: 20px;
+  background-color: #DE3F4F;
+  content: "6";
+  border-radius: 50%;
+  color: #FFFFFF;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  font-size: 16px;
+  top: 0px;
+  margin-left: -8px;
+}
+body .wrapper-navigation nav .mid-icons .social::after {
+  height: 20px;
+  width: 20px;
+  background-color: #DE3F4F;
+  content: "1";
+  border-radius: 50%;
+  color: #FFFFFF;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  font-size: 16px;
+  top: 0px;
+  margin-left: 15px;
+}
+body .wrapper-navigation nav .right-icons-wrapper {
+  justify-content: end;
+}
+body .wrapper-navigation nav .right-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .wrapper-navigation nav .right-icons span {
+  width: 50px;
+  height: 50px;
+  background-color: #E5E6EB;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+body .wrapper-navigation nav .right-icons .user-name {
+  padding-left: 8px;
+}
+body .wrapper-navigation nav .right-icons .user-icon {
+  width: 32px;
+  height: 32px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .content-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(241, 241, 241);
+  min-width: 80%;
+}
+body .content-wrapper .content h1 {
+  text-align: center;
+}
+body .content-wrapper .content .output .fetchedImage {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
