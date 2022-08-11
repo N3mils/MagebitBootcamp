@@ -1,4 +1,4 @@
-async function fetchAPIcontent(url, callback){
+async function fetchImageAPI(url, callback){
     // console.log('request has ben sent. await response')
 
     const response = await fetch(url);//Gets response from url input
@@ -13,11 +13,10 @@ async function fetchAPIcontent(url, callback){
 
 document.querySelector('.fetch_btn').onclick = function(){//selects button and ands onclick event
     console.log('Fetch button click');
-    fetchAPIcontent('https://dog.ceo/api/breeds/image/random', function(response){
+    fetchImageAPI('https://dog.ceo/api/breeds/image/random', function(response){
         // console.log('Response from api', response);
         addImage(response.message);//Inserts in function only message(url) 
     })
-    
 }
 
 let outputElement = document.querySelector(".output");//selects html container for output
@@ -38,7 +37,7 @@ function addImage(source){
 window.addEventListener('scroll',()=>{
     if(window.scrollY + window.innerHeight >= document.documentElement.scrollHeight){
         for (let i = 0; i < 4; i++){
-            fetchAPIcontent('https://dog.ceo/api/breeds/image/random', function(response){
+            fetchImageAPI('https://dog.ceo/api/breeds/image/random', function(response){
                 addImage(response.message);//Inserts in function only message(url) 
             })
         }
