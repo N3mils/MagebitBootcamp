@@ -1,0 +1,59 @@
+import React from "react";
+import "./styles.css";
+
+export default function App() {
+  return (
+    <div className="App">
+      <h1>Hello my name ir random user</h1>
+      {/* <h2>Start editing to see some magic happen!</h2> */}
+      <ContentAPI />
+    </div>
+  );
+}
+class ContentAPI extends React.Component {
+  constructor(props) {
+    super(props);
+    // Don't call this.setState() here!
+    this.state = { name: "", last: "" };
+    // this.handleClick = this.handleClick.bind(this);
+  }
+
+  async fetchContentFromAPI(url, callback) {
+    const response = await fetch(url);
+    const response_json = await response.json();
+    if (response.status === 200) {
+      callback(response_json);
+    }
+  }
+
+  contentCard() {
+    // this.fetchContentFromAPI("https://randomuser.me/api/", console.log);
+    // let authorFullName = "";
+    this.fetchContentFromAPI("https://randomuser.me/api/", (response) => {
+      this.setState({ name: response.results[0].name.first, last: response.results[0].name.last });
+      // let authorLastname = response.results[0].name.last;
+      // authorFullName = authorName + " " + authorLastname;
+      // console.log(authorFullName);
+    });
+
+    // return <div className="name">{authorFullName}</div>;
+  }
+
+  render() {
+    return (
+      <>
+        
+        <button
+          className="fetchContent"
+          onClick={() => {
+            // this.fetchContentFromAPI("https://randomuser.me/api/", console.log);
+            this.contentCard();
+          }}
+        >
+          Teeeeest
+        </button>
+        <div className="name">{this.state.name + " " +this.state.last}</div>
+      </>
+    );
+  }
+}
