@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test', function(){
+    return view('test');
+});
+// Route::get('/todo/save/{id}', function(){
+//     $todo = new Todos();
+//     $todo->task = $id;
+//     $todo->status = 0;
+//     $todo->save();
+//     var_dump($todo);
+// });
+Route::get('/todo/save/{id}',[Todo::class,'save']);

@@ -17,8 +17,10 @@ return new class extends Migration
         Schema::create('todos', function (Blueprint $table) {
             $table->id();
             $table->string('task');
-            $table->integer('status');
+            $table->tinyInteger('status');
             $table->timestamps();
+            $table->string('auth')->default('Ilja');
+            $table->integer('salary')->unsigned()->default(0);
         });
 
         for($i =0; $i<10; $i++){
