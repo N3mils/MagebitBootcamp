@@ -57,7 +57,7 @@ class Mysql{
 
    //delete a task by Id
    public function deleteTask($id){
-     $sql = "delete from task where task_id=". $id;
+     $sql = "delete from task where task_id=".$id;
       if($this->conn->query($sql) === TRUE){
       echo "Task Deleted!";
     }

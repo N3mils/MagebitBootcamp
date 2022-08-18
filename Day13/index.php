@@ -30,6 +30,7 @@ if(isset($_GET['edit_id']) && isset($_GET['task_name'])){
 <script>
 function edit(id,task_name){
    location.href = 'index.php?edit_id='+ id+ '&task_name='+task_name;
+   document.selectElementById('task').innerHTML = '';
 }
 
 function deleteTask(taskId){
@@ -51,7 +52,7 @@ function deleteTask(taskId){
 <ul>
 <?php foreach($allTasks as $taskItem): ?>
 <li> <?php echo $taskItem['task_name']; ?> 
-<button name="edit" onclick="edit(<?php echo $taskItem['id'] ?>,'<?php echo $taskItem['task_name'] ?>')">Edit</button>
+<button name="edit" onclick="edit(<?php echo $taskItem['task_id'] ?>,'<?php echo $taskItem['task_name'] ?>')">Edit</button>
 <button name="delete" onclick="deleteTask(<?php echo $taskItem['id'] ?>)">Delete</button>
 </li>
 <?php endforeach; ?>
