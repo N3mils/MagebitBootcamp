@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+body .wrapper h1 {
+  text-align: center;
+}
+body .wrapper .taskCreation {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+body .wrapper .tasks {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
