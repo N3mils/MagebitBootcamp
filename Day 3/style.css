@@ -1,0 +1,45 @@
+form{
+    position: relative;
+    width: 30%;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+form{
+    width: 200px;
+}
+form::before{
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width:9px;
+    height: 9px;
+    left:25%;
+    background-color: red;
+    bottom: calc(100% - 15px);
+    background: url('igicons/search.svg');
+    background-repeat: no-repeat;
+    
+}
+input{
+    text-align: center;
+}
+.icons{
+    height: 22px;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+.messages::after{
+    content: '5';
+    position: absolute;
+    /* right:; */
+    top:0px;
+    background-color: red;
+    border-radius: 50%;
+    width:1em;
+    text-align: center;
+    color: white;
+}

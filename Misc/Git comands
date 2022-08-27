@@ -1,0 +1,25 @@
+The first practical task for Friday:
+Create an account on github.com
+Open terminal in VSCode (find top menu bar -> Terminal -> New Terminal)
+Make sure that you have git installed by running git --version  command in the terminal
+Follow this guide , starting from Step 4.
+-------------------
+Now, go back to your GitHub account
+Create a new repository by clicking on the "+" icon in the navigation bar -> then clicking on "New repository" (you'll find the "+" icon in top right corner of your GitHub account).
+The create a new repository page will appear. Enter a name for your repository, then click "Create repository"
+Now, you should see a Quick setup page. Choose "HTTPS" option and copy the link to your repository. It should look like https://github.com/your-github-name/repository-name.git
+---------
+Go back to VSCode's terminal
+Navigate, if needed, to the folder where you would like your project to be (using cd command in the terminal)
+Run git clone [HTTPS ADDRESS]  ( change [HTTPS ADDRESS] to your repository's link that you have copied in step 9. This command will make a local copy of the repository hosted at the given address.
+Navigate to the local copy of your repository by running cd [NAME OF REPOSITORY]  (change [NAME OF REPOSITORY] to your repository's name).
+-----------
+Now, in your new project, create a HTML & CSS website using the following design https://www.figma.com/file/nnX0OiaEQfdwjaQ1y86TBt/Online-store-website-(Community)?node-id=196%3A425
+Add responsiveness to website (use @media css rule if necessary)
+As soon as you are finished (oor, if it's 13:10 already) - Commit changes to GitHub.
+-----------
+To commit changes to GitHub:
+get back to the terminal in VSCode
+run git add .   This will select all changes that you have made for commit
+run git commit -m "your commit message" (change "your-commit-message" to a message that explains what you did, in declarative way, like "Create markup for the homepage").
+run git push origin main  This will push your local commit to the remote repository on GitHub. "main" here is a name of the branch you have worked on

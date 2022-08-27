@@ -1,0 +1,82 @@
+berry {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: rgb(136, 209, 40);
+    border-radius: 50%;
+  }
+  
+  bush {
+    display: inline-block;
+    padding: 20px;
+    background: rgba(172, 255, 47, 0.308);
+    margin: 10px;
+  }
+  
+  branch {
+    display: inline-block;
+    padding: 5px;
+    border-top: 3px solid brown;
+  }
+  
+  branch berry {
+    position: relative;
+    border-top: 3px solid green;
+  }
+  
+  .blueberries berry {
+    background: blueviolet;
+  }
+  
+  .blueberries branch {
+    position: relative;
+    border-top-color: rgb(55, 214, 41);
+  }
+  
+  branch berry::before {
+    position: absolute;
+    content: "|";
+    top: -15px;
+    left: 42%;
+  }
+  
+  .blueberries branch:nth-child(2) berry {
+    background: rgb(88, 22, 150);
+  }
+  
+  .raspberry berry {
+    background: rgb(250, 100, 100);
+  }
+  .extra-berry berry{
+    background-color: rgb(255, 247, 203);
+  }
+  .extra-berry:nth-child(1){
+    background-color: yellow;
+  }
+  .raspberry berry:nth-child(2n-1){
+    background-color: rgb(184, 118, 118);
+  }
+  .raspberry:last-child{
+    background-color: aqua;
+  }
+  .blueberries:last-child branch{
+    border-color: black;
+  }
+  .last-box{
+    /* width: calc(30px * 5); */
+    width: 200px;
+    display: flex;
+    background-color: aqua;
+    border: inset 5px rgb(230, 18, 18);
+  }
+  .last-box berry{
+    color: black;
+    flex: 1;
+  }
+  .last-box berry:nth-child(odd){
+    flex:2;
+  }
+
+
+
+

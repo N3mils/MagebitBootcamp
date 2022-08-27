@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Square Peg';
+    src: url(fonts/Square_Peg/SquarePeg-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Ibarra Real Nova';
+    src: url(fonts/Ibarra_Real_Nova/static/IbarraRealNova-Regular.ttf);
+    font-weight: 400;
+}
+
+.block{
+    display: block;
+    width: 170px;
+    height: 80px;
+    background-color: #FFD600;
+}
+.page1{
+    font-family: 'Square Peg', cursive;
+}
+h1{
+    font-size: 64px;
+}
+h2{
+    font-size: 48px;
+}
+h3{
+    font-size: 40px;  
+}
+p{
+    font-size: 16px;
+    width: 384px;
+    height: 127px;
+}
+.page2{
+    font-family: 'Square Peg', cursive;
+    font-style: italic;
+}

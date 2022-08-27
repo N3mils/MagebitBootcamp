@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    background-color: aquamarine;
+}
+.content-wrapper{
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.content-text{
+    position: relative;
+}
+.content-text->h1, .content-text-> p{
+    color: #000;
+}
+h1{
+    width: 40%;
+    color: white;
+    margin: auto;
+    font-size: 64px;
+    text-align: center;
+    top: calc(50% - 64px);
+}
+.content-img{
+    background-color: red;
+    height:400px;
+    width: 10%;
+    position: relative;
+}
+/* ---------------------------------------------------------- */
+.content-wrapper{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+.card-content{
+    padding: 0 2rem;
+}
+.card{
+    height:100%;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+img{
+    background-color: burlywood;
+    width: 100%;
+    height: 15vh;
+}
+h4{
+    /* text-align: center; */
+    color: green;
+}
+button{
+    background-color: rgb(114, 224, 188);
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+
