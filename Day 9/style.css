@@ -111,9 +111,20 @@ body .content-wrapper {
 body .content-wrapper .content h1 {
   text-align: center;
 }
-body .content-wrapper .content .output .fetchedImage {
+body .content-wrapper .content .output .fetchedCard {
+  border-top: 1px solid black;
+  padding: 50px 0;
+}
+body .content-wrapper .content .output .fetchedCard .fetchedImage {
   display: flex;
   justify-content: center;
+}
+body .content-wrapper .content .output .fetchedCard .fetchedImage img {
+  width: 100%;
+  max-width: 600px;
+}
+body .content-wrapper .content .output .fetchedCard p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
