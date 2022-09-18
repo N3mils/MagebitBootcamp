@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  display: flex;
+}
+body h1 {
+  font-size: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #131821;
+  line-height: 34px;
+  font-weight: 400;
+  margin: 0;
+}
+body p {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6A707B;
+  line-height: 28px;
+  font-weight: 400;
+  justify-content: right;
+}
+body a {
+  color: #131821;
+}
+body a:hover {
+  color: #4066A5;
+}
+body a:visited {
+  color: #233759;
+}
+body nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body nav a {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6A707B;
+  text-decoration: none;
+  margin-left: 20px;
+}
+body nav .items-right {
+  padding-top: 26px;
+}
+body .page-wrapper {
+  padding: 100px 100px 0 100px;
+  z-index: 2;
+}
+body .page-wrapper .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+body .page-wrapper .content-wrapper .content {
+  min-width: 350px;
+  padding: 0px 36px 0px 36px;
+}
+body .page-wrapper .content-wrapper .content p {
+  margin-bottom: 50px;
+}
+body .page-wrapper .content-wrapper .content .email-subscription {
+  width: 166%;
+  border: 1px solid #E3E3E4;
+  border-left: 4px solid #4066A5;
+  margin-bottom: 50px;
+  margin-left: -36px;
+}
+body .page-wrapper .content-wrapper .content .email-subscription .email {
+  width: 150%;
+  padding: 23px 0px 23px 40px;
+  border: none;
+  font-size: 16px;
+}
+body .page-wrapper .content-wrapper .content .email-subscription .email::-moz-placeholder {
+  font-size: 16px;
+}
+body .page-wrapper .content-wrapper .content .email-subscription .email:-ms-input-placeholder {
+  font-size: 16px;
+}
+body .page-wrapper .content-wrapper .content .email-subscription .email::placeholder {
+  font-size: 16px;
+}
+body .page-wrapper .content-wrapper .content .email-subscription .submit {
+  background-image: url(assets/icons/ic_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 23px 40px 23px 40px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+body .page-wrapper .content-wrapper .content .email-subscription form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+body .page-wrapper .content-wrapper .content .email-subscription:hover, body .page-wrapper .content-wrapper .content .email-subscription:focus {
+  box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+body .page-wrapper .content-wrapper .content .checkbox {
+  height: 26px;
+  width: 26px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #E3E3E4;
+  border-radius: 3px;
+}
+body .page-wrapper .content-wrapper .content .checkbox {
+  font-size: 0.5em;
+}
+body .page-wrapper .content-wrapper .content label {
+  margin: auto;
+  vertical-align: super;
+  color: #6A707B;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .page-wrapper .content-wrapper .content hr {
+  background: #E3E3E4;
+  border: none;
+  height: 1px;
+}
+body .page-wrapper .content-wrapper .content .socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+body .page-wrapper .content-wrapper .content .socials a {
+  border: 2px solid #E2E3E4;
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+body .page-wrapper .content-wrapper .content .socials a:hover {
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+body .page-wrapper .content-wrapper .content .socials a:hover svg path {
+  opacity: 1;
+  fill: white;
+}
+body .page-wrapper .content-wrapper .content .socials a:first-child:visited {
+  background-color: #2F4A80;
+}
+body .page-wrapper .content-wrapper .content .socials a:nth-child(2):visited {
+  background-color: #8F2762;
+}
+body .page-wrapper .content-wrapper .content .socials a:nth-child(3):visited {
+  background-color: #177FBF;
+}
+body .page-wrapper .content-wrapper .content .socials a:last-child:visited {
+  background-color: #CC0000;
+}
+body .page-wrapper .content-wrapper .content .socials a:first-child:hover {
+  background: #4267B2;
+}
+body .page-wrapper .content-wrapper .content .socials a:nth-child(2):hover {
+  background: #C13584;
+}
+body .page-wrapper .content-wrapper .content .socials a:nth-child(3):hover {
+  background: #1DA1F2;
+}
+body .page-wrapper .content-wrapper .content .socials a:last-child:hover {
+  background: #FF0000;
+}
+body .picture {
+  background-image: url(assets/images/image_summer.png);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  min-width: 1px;
+  display: flex;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 610px) {
+  body {
+    display: block;
+  }
+  body .page-wrapper {
+    z-index: 2;
+    padding: 0;
+  }
+  body .page-wrapper .navigation-wrapper {
+    background-color: #FFFFFF;
+    padding: 10px 20px 16px 20px;
+  }
+  body .page-wrapper .navigation-wrapper nav .items-left a {
+    display: none;
+  }
+  body .page-wrapper .navigation-wrapper nav .items-right {
+    padding: 0;
+  }
+  body .page-wrapper .content-wrapper {
+    height: 88vh;
+  }
+  body .page-wrapper .content-wrapper .content {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+    padding: 30px 20px 30px 20px;
+    margin: 0 20px;
+    min-width: 250px;
+  }
+  body .page-wrapper .content-wrapper .content .email-subscription {
+    width: 100%;
+    margin: 0;
+  }
+  body .page-wrapper .content-wrapper .content .checkbox {
+    margin-top: 30px;
+  }
+  body .picture {
+    position: fixed;
+    display: block;
+    z-index: -1;
+    top: 0;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 610px) {
+  body .page-wrapper .content-wrapper .content .email-subscription {
+    width: 140%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body .page-wrapper .content-wrapper .content .email-subscription {
+    width: 166%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) *//*# sourceMappingURL=style.css.map */
