@@ -59,6 +59,10 @@ body .page-wrapper .content-wrapper .content {
 body .page-wrapper .content-wrapper .content p {
   margin-bottom: 50px;
 }
+body .page-wrapper .content-wrapper .content #badge {
+  top: -20px;
+  position: relative;
+}
 body .page-wrapper .content-wrapper .content .email-subscription {
   width: 166%;
   border: 1px solid #E3E3E4;
