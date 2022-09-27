@@ -46,7 +46,7 @@ function deleteTask(taskId){
 <input type="submit" name="submit" value="Submit Button">
 </form>
 
-<?php $allTasks = $mysql->selectAllTasks(); ?>
+<?php //$allTasks = $mysql->selectAllTasks(); ?>
 
 <?php if(count($allTasks) > 0): ?>
 <ul>
