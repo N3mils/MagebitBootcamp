@@ -28,19 +28,19 @@
     
         <div class="content-wrapper">
             <div class="content">
+                <span class="subscribe"></span>
                 <h1 id="title">Subscribe to newsletter</h1>
                 <p id="message">Subscribe to our newsletter and get 10% discount on pineapple glasses.</p>
                 <div class="email-subscription">
-                    <form>
                         <input 
                         class="email" 
                         type="email" 
+                        id="input"
                         placeholder="Type your email address here…" 
                         required
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$";
                         />
-                        <button class="submit" type="submit" placeholder=""></button>
-                    </form>                   
+                        <button class="submit" type="button" placeholder="" id="submit"></button>                
                 </div>
                 <input class="checkbox" type="checkbox" name="terms" checked>
                 <label for="terms">I agree to <a href="#">terms of service</a></label>
@@ -78,4 +78,5 @@
         
     </div>
 </body>
+<script src="script.js"></script>
 </html>
