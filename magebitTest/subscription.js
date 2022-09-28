@@ -28,16 +28,17 @@ function ValidateEmail(inputText){
         // alert("Valid email address!");
         // document.subscribe.email.focus();
         
-
-        return true;
-    }
-    else
-    {
-        // alert("You have entered an invalid email address!");
-        // errorText.innerHTML("You have entered an invalid email address!");
-
-        document.subscribe.email.focus();
+        inputText.preventDefault();
+        // return true;
         return false;
     }
+    // else
+    // {
+    //     // alert("You have entered an invalid email address!");
+    //     // errorText.innerHTML("You have entered an invalid email address!");
+
+    //     document.subscribe.email.focus();
+    //     return false;
+    // }
     
 }

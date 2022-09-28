@@ -42,7 +42,7 @@
                 <h1 id="title"></h1>
                 <p id="message"></p>
                 <div class="email-subscription">
-                    <form name="subscribe" onsubmit=" return loadSubscribe()">
+                    <form name="subscribe" onsubmit="loadSubscribe(); return false">
                         <input 
                         class="email" 
                         name="email"
@@ -52,7 +52,7 @@
                         required
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                         />
-                        <button class="submit" placeholder="" onclick="ValidateEmail(document.subscribe.email)"></button>
+                        <button class="submit" placeholder="" onclick="ValidateEmail(document.email)"></button>
                     </form>     
                     
                 </div>
